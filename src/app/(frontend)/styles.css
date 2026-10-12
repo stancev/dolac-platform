@@ -33,7 +33,7 @@
   --muted: #eae5d8;
   --muted-foreground: #68716b;
 
-  --accent: #7f8d67;
+  --accent: #eae5d8;
   --accent-foreground: #222925;
 
   --destructive: #b42318;
@@ -88,8 +88,8 @@
   --muted: #272e29;
   --muted-foreground: #a8aea7;
 
-  --accent: #a1ae7e;
-  --accent-foreground: #151a17;
+  --accent: #272e29;
+  --accent-foreground: #f0ebdd;
 
   --destructive: #e66a61;
 
@@ -116,6 +116,38 @@
 @theme inline {
   --font-sans: var(--font-inter);
   --font-display: var(--font-source-serif);
+
+  --text-page-title: clamp(2.5rem, 1.9rem + 2vw, 4rem);
+  --text-page-title--line-height: 1;
+  --text-page-title--letter-spacing: -0.025em;
+  --text-page-title--font-weight: 500;
+
+  --text-section-title: clamp(2rem, 1.65rem + 1.2vw, 3rem);
+  --text-section-title--line-height: 1.08;
+  --text-section-title--letter-spacing: -0.02em;
+  --text-section-title--font-weight: 500;
+
+  --text-card-title: clamp(1.625rem, 1.5rem + 0.45vw, 2rem);
+  --text-card-title--line-height: 1.12;
+  --text-card-title--letter-spacing: -0.015em;
+  --text-card-title--font-weight: 600;
+
+  --text-lead: clamp(1.125rem, 1.075rem + 0.2vw, 1.25rem);
+  --text-lead--line-height: 1.65;
+  --text-lead--font-weight: 400;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.65;
+  --text-body--font-weight: 400;
+
+  --text-meta: 0.875rem;
+  --text-meta--line-height: 1.5;
+  --text-meta--font-weight: 500;
+
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.2;
+  --text-eyebrow--letter-spacing: 0.16em;
+  --text-eyebrow--font-weight: 700;
 
   /* Our domain design tokens */
   --color-stone: var(--stone);

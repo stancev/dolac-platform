@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "eyebrow": "Digitalni atlas kraja",
+    "title": "Naš kraj",
+    "description": "Dolac, Gradište i belopalanački deo Sićevačke klisure."
+  },
+  "Navigation": {
+    "villages": "Sela"
+  },
+  "Villages": {
+    "eyebrow": "NAŠA SELA",
+    "title": "Šest sela. Jedan prostor.",
+    "description": "Sela uz Nišavu i na padinama između Sićevačke klisure i Svrljiških planina povezuju isti putevi, pejzaž i svakodnevni život.",
+    "cardCta": "Istraži selo"
+  },
+  "VillageDetail": {
+    "villages": "Sela",
+    "entity": "SELO",
+    "about": "O selu",
+    "gallery": "Galerija",
+    "mapTitle": "Na mapi",
+    "openMap": "Otvori mapu",
+    "mapFrameTitle": "Lokacija sela na mapi",
+    "otherVillages": "Istraži i druga sela"
+  }
+}

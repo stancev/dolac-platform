@@ -1,0 +1,26 @@
+{
+  "Home": {
+    "eyebrow": "Regional digital atlas",
+    "title": "Our Region",
+    "description": "Dolac, Gradište and the Bela Palanka section of the Sićevo Gorge."
+  },
+  "Navigation": {
+    "villages": "Villages"
+  },
+  "Villages": {
+    "eyebrow": "OUR VILLAGES",
+    "title": "Six villages. One landscape.",
+    "description": "Villages along the Nišava and the slopes between the Sićevo Gorge and the Svrljig Mountains share the same roads, landscape and everyday life.",
+    "cardCta": "Explore the village"
+  },
+  "VillageDetail": {
+    "villages": "Villages",
+    "entity": "VILLAGE",
+    "about": "About the village",
+    "gallery": "Gallery",
+    "mapTitle": "On the map",
+    "openMap": "Open map",
+    "mapFrameTitle": "Village location on the map",
+    "otherVillages": "Explore other villages"
+  }
+}
