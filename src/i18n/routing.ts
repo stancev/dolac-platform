@@ -22,5 +22,14 @@ export const routing = defineRouting({
       sr: '/sela/[slug]',
       en: '/villages/[slug]',
     },
+
+    '/places': {
+      sr: '/mesta',
+      en: '/places',
+    },
+    '/places/[slug]': {
+      sr: '/mesta/[slug]',
+      en: '/places/[slug]',
+    },
   },
 })

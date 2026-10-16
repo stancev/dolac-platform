@@ -70,6 +70,7 @@ export interface Config {
     users: User;
     media: Media;
     villages: Village;
+    places: Place;
     'payload-kv': PayloadKv;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -80,6 +81,7 @@ export interface Config {
     users: UsersSelect<false> | UsersSelect<true>;
     media: MediaSelect<false> | MediaSelect<true>;
     villages: VillagesSelect<false> | VillagesSelect<true>;
+    places: PlacesSelect<false> | PlacesSelect<true>;
     'payload-kv': PayloadKvSelect<false> | PayloadKvSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -206,6 +208,52 @@ export interface Village {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "places".
+ */
+export interface Place {
+  id: number;
+  name: string;
+  slug: string;
+  placeType: 'nature' | 'heritage' | 'swimming' | 'viewpoint' | 'religious' | 'recreation' | 'other';
+  shortDescription: string;
+  description?: {
+    root: {
+      type: string;
+      children: {
+        type: any;
+        version: number;
+        [k: string]: unknown;
+      }[];
+      direction: ('ltr' | 'rtl') | null;
+      format: 'left' | 'start' | 'center' | 'right' | 'end' | 'justify' | '';
+      indent: number;
+      version: number;
+    };
+    [k: string]: unknown;
+  } | null;
+  heroImage: number | Media;
+  coordinates: {
+    latitude: number;
+    longitude: number;
+  };
+  village?: (number | null) | Village;
+  gallery?:
+    | {
+        image: number | Media;
+        caption?: string | null;
+        id?: string | null;
+      }[]
+    | null;
+  /**
+   * Kratko objasni kako se fizički stiže do lokaliteta od najbližeg javnog puta ili poznate tačke, uključujući samo praktična ograničenja koja su stvarno relevantna.
+   */
+  accessDescription?: string | null;
+  featured?: boolean | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-kv".
  */
 export interface PayloadKv {
@@ -239,6 +287,10 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'villages';
         value: number | Village;
+      } | null)
+    | ({
+        relationTo: 'places';
+        value: number | Place;
       } | null);
   globalSlug?: string | null;
   user: {
@@ -346,6 +398,36 @@ export interface VillagesSelect<T extends boolean = true> {
         latitude?: T;
         longitude?: T;
       };
+  featured?: T;
+  updatedAt?: T;
+  createdAt?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "places_select".
+ */
+export interface PlacesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  placeType?: T;
+  shortDescription?: T;
+  description?: T;
+  heroImage?: T;
+  coordinates?:
+    | T
+    | {
+        latitude?: T;
+        longitude?: T;
+      };
+  village?: T;
+  gallery?:
+    | T
+    | {
+        image?: T;
+        caption?: T;
+        id?: T;
+      };
+  accessDescription?: T;
   featured?: T;
   updatedAt?: T;
   createdAt?: T;

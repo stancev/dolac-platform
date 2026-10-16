@@ -22,5 +22,36 @@
     "openMap": "Otvori mapu",
     "mapFrameTitle": "Lokacija sela na mapi",
     "otherVillages": "Istraži i druga sela"
+  },
+  "Places": {
+    "eyebrow": "ISTRAŽI",
+    "title": "Mesta koja oblikuju ovaj kraj",
+    "description": "Priroda, nasleđe, kupališta, vidikovci i druga konkretna mesta kroz koja se upoznaje ovaj kraj.",
+    "cardCta": "Istraži mesto",
+    "all": "Sva mesta",
+    "empty": "Trenutno nema mesta u ovoj kategoriji.",
+    "showAll": "Prikaži sva mesta",
+    "filterLabel": "Filtriraj mesta po vrsti",
+    "types": {
+      "nature": "Priroda",
+      "heritage": "Nasleđe",
+      "swimming": "Kupanje",
+      "viewpoint": "Vidikovci",
+      "religious": "Verska mesta",
+      "recreation": "Rekreacija",
+      "other": "Ostalo"
+    },
+    "breadcrumb": "Mesta",
+    "breadcrumbLabel": "Putanja",
+    "showOnMap": "Prikaži na mapi",
+    "villageLabel": "Selo",
+    "aboutTitle": "O mestu",
+    "galleryTitle": "Galerija",
+    "locationTitle": "Lokacija i prilaz",
+    "mapFrameTitle": "Mapa lokacije: {name}",
+    "openMap": "Otvori mapu",
+    "villageContextLabel": "U selu",
+    "exploreVillage": "Istraži selo",
+    "morePlacesInVillage": "Još mesta u {village}"
   }
 }

@@ -22,5 +22,36 @@
     "openMap": "Open map",
     "mapFrameTitle": "Village location on the map",
     "otherVillages": "Explore other villages"
+  },
+  "Places": {
+    "eyebrow": "EXPLORE",
+    "title": "Places that shape this landscape",
+    "description": "Nature, heritage, swimming spots, viewpoints and other places through which this landscape can be explored.",
+    "cardCta": "Explore the place",
+    "all": "All places",
+    "empty": "There are currently no places in this category.",
+    "showAll": "Show all places",
+    "filterLabel": "Filter places by type",
+    "types": {
+      "nature": "Nature",
+      "heritage": "Heritage",
+      "swimming": "Swimming",
+      "viewpoint": "Viewpoints",
+      "religious": "Religious places",
+      "recreation": "Recreation",
+      "other": "Other"
+    },
+    "breadcrumb": "Places",
+    "breadcrumbLabel": "Breadcrumb",
+    "showOnMap": "Show on map",
+    "villageLabel": "Village",
+    "aboutTitle": "About this place",
+    "galleryTitle": "Gallery",
+    "locationTitle": "Location and access",
+    "mapFrameTitle": "Location map: {name}",
+    "openMap": "Open map",
+    "villageContextLabel": "In the village",
+    "exploreVillage": "Explore the village",
+    "morePlacesInVillage": "More places in {village}"
   }
 }
